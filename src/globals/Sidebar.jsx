@@ -13,7 +13,11 @@ const components = [
 
 const Sidebar = () => {
     return (
-        <Drawer anchor="left" variant="permanent" sx={{ width: 500, flexShrink: 0,}}>
+        <Drawer 
+            anchor="left" 
+            variant="permanent" 
+            sx={{ width: 500, flexShrink: 0, '& .MuiDrawer-paper': { width: 500, boxSizing: 'border-box' } }}
+        >
             <Toolbar/>
             <Divider/>
             <List>
